@@ -13,8 +13,6 @@
 		D3ABAF501BA03CA3009E3763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ABAF4E1BA03CA3009E3763 /* Main.storyboard */; };
 		D3ABAF521BA03CA3009E3763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ABAF511BA03CA3009E3763 /* Assets.xcassets */; };
 		D3ABAF551BA03CA3009E3763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3ABAF531BA03CA3009E3763 /* LaunchScreen.storyboard */; };
-		D3ABAF601BA03CA3009E3763 /* Mapsforge_Sample_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABAF5F1BA03CA3009E3763 /* Mapsforge_Sample_iOSTests.m */; };
-		D3ABAF6B1BA03CA3009E3763 /* Mapsforge_Sample_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABAF6A1BA03CA3009E3763 /* Mapsforge_Sample_iOSUITests.m */; };
 		D3ABAF791BA043CF009E3763 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABAF781BA043CF009E3763 /* MapKit.framework */; };
 		D3ABAF7C1BA04FEC009E3763 /* MapsforgeTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABAF7B1BA04FEC009E3763 /* MapsforgeTileOverlay.m */; };
 		D3ABAF831BA054A3009E3763 /* MapsForgeXmlRenderTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABAF821BA054A3009E3763 /* MapsForgeXmlRenderTheme.m */; };
@@ -27,23 +25,6 @@
 		D3D8A1801BA0699000542850 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = D3D8A17F1BA0699000542850 /* Data */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D3ABAF5C1BA03CA3009E3763 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D3ABAF3A1BA03CA3009E3763 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D3ABAF411BA03CA3009E3763;
-			remoteInfo = "Mapsforge-Sample-iOS";
-		};
-		D3ABAF671BA03CA3009E3763 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D3ABAF3A1BA03CA3009E3763 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D3ABAF411BA03CA3009E3763;
-			remoteInfo = "Mapsforge-Sample-iOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D3ABAF421BA03CA3009E3763 /* MapKit-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapKit-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABAF461BA03CA3009E3763 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,10 +36,8 @@
 		D3ABAF511BA03CA3009E3763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3ABAF541BA03CA3009E3763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3ABAF561BA03CA3009E3763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3ABAF5B1BA03CA3009E3763 /* Mapsforge-Sample-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mapsforge-Sample-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABAF5F1BA03CA3009E3763 /* Mapsforge_Sample_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mapsforge_Sample_iOSTests.m; sourceTree = "<group>"; };
 		D3ABAF611BA03CA3009E3763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3ABAF661BA03CA3009E3763 /* Mapsforge-Sample-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mapsforge-Sample-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABAF6A1BA03CA3009E3763 /* Mapsforge_Sample_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mapsforge_Sample_iOSUITests.m; sourceTree = "<group>"; };
 		D3ABAF6C1BA03CA3009E3763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3ABAF781BA043CF009E3763 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -91,20 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3ABAF581BA03CA3009E3763 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3ABAF631BA03CA3009E3763 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				D3ABAF421BA03CA3009E3763 /* MapKit-Sample.app */,
-				D3ABAF5B1BA03CA3009E3763 /* Mapsforge-Sample-iOSTests.xctest */,
-				D3ABAF661BA03CA3009E3763 /* Mapsforge-Sample-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,42 +175,6 @@
 			productReference = D3ABAF421BA03CA3009E3763 /* MapKit-Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D3ABAF5A1BA03CA3009E3763 /* Mapsforge-Sample-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D3ABAF721BA03CA3009E3763 /* Build configuration list for PBXNativeTarget "Mapsforge-Sample-iOSTests" */;
-			buildPhases = (
-				D3ABAF571BA03CA3009E3763 /* Sources */,
-				D3ABAF581BA03CA3009E3763 /* Frameworks */,
-				D3ABAF591BA03CA3009E3763 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D3ABAF5D1BA03CA3009E3763 /* PBXTargetDependency */,
-			);
-			name = "Mapsforge-Sample-iOSTests";
-			productName = "Mapsforge-Sample-iOSTests";
-			productReference = D3ABAF5B1BA03CA3009E3763 /* Mapsforge-Sample-iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D3ABAF651BA03CA3009E3763 /* Mapsforge-Sample-iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D3ABAF751BA03CA3009E3763 /* Build configuration list for PBXNativeTarget "Mapsforge-Sample-iOSUITests" */;
-			buildPhases = (
-				D3ABAF621BA03CA3009E3763 /* Sources */,
-				D3ABAF631BA03CA3009E3763 /* Frameworks */,
-				D3ABAF641BA03CA3009E3763 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D3ABAF681BA03CA3009E3763 /* PBXTargetDependency */,
-			);
-			name = "Mapsforge-Sample-iOSUITests";
-			productName = "Mapsforge-Sample-iOSUITests";
-			productReference = D3ABAF661BA03CA3009E3763 /* Mapsforge-Sample-iOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,14 +192,6 @@
 							};
 						};
 					};
-					D3ABAF5A1BA03CA3009E3763 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = D3ABAF411BA03CA3009E3763;
-					};
-					D3ABAF651BA03CA3009E3763 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = D3ABAF411BA03CA3009E3763;
-					};
 				};
 			};
 			buildConfigurationList = D3ABAF3D1BA03CA3009E3763 /* Build configuration list for PBXProject "Mapsforge-Sample-iOS" */;
@@ -289,8 +208,6 @@
 			projectRoot = "";
 			targets = (
 				D3ABAF411BA03CA3009E3763 /* MapKit-Sample */,
-				D3ABAF5A1BA03CA3009E3763 /* Mapsforge-Sample-iOSTests */,
-				D3ABAF651BA03CA3009E3763 /* Mapsforge-Sample-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,20 +221,6 @@
 				D3ABAF521BA03CA3009E3763 /* Assets.xcassets in Resources */,
 				D3D8A1801BA0699000542850 /* Data in Resources */,
 				D3ABAF501BA03CA3009E3763 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3ABAF591BA03CA3009E3763 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3ABAF641BA03CA3009E3763 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,36 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3ABAF571BA03CA3009E3763 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3ABAF601BA03CA3009E3763 /* Mapsforge_Sample_iOSTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D3ABAF621BA03CA3009E3763 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3ABAF6B1BA03CA3009E3763 /* Mapsforge_Sample_iOSUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D3ABAF5D1BA03CA3009E3763 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D3ABAF411BA03CA3009E3763 /* MapKit-Sample */;
-			targetProxy = D3ABAF5C1BA03CA3009E3763 /* PBXContainerItemProxy */;
-		};
-		D3ABAF681BA03CA3009E3763 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D3ABAF411BA03CA3009E3763 /* MapKit-Sample */;
-			targetProxy = D3ABAF671BA03CA3009E3763 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D3ABAF4E1BA03CA3009E3763 /* Main.storyboard */ = {
@@ -481,7 +355,7 @@
 					"$(SRCROOT)/Mapsforge-Sample-iOS/lib/mapsforge-ios-headers/",
 				);
 				INFOPLIST_FILE = "Mapsforge-Sample-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,7 +385,7 @@
 					"$(SRCROOT)/Mapsforge-Sample-iOS/lib/mapsforge-ios-headers",
 				);
 				INFOPLIST_FILE = "Mapsforge-Sample-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,54 +400,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geolives.Mapsforge-Sample-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D3ABAF731BA03CA3009E3763 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Mapsforge-Sample-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geolives.Mapsforge-Sample-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mapsforge-Sample-iOS.app/Mapsforge-Sample-iOS";
-			};
-			name = Debug;
-		};
-		D3ABAF741BA03CA3009E3763 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "Mapsforge-Sample-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geolives.Mapsforge-Sample-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mapsforge-Sample-iOS.app/Mapsforge-Sample-iOS";
-			};
-			name = Release;
-		};
-		D3ABAF761BA03CA3009E3763 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Mapsforge-Sample-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geolives.Mapsforge-Sample-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Mapsforge-Sample-iOS";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		D3ABAF771BA03CA3009E3763 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "Mapsforge-Sample-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geolives.Mapsforge-Sample-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "Mapsforge-Sample-iOS";
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -594,24 +420,6 @@
 			buildConfigurations = (
 				D3ABAF701BA03CA3009E3763 /* Debug */,
 				D3ABAF711BA03CA3009E3763 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D3ABAF721BA03CA3009E3763 /* Build configuration list for PBXNativeTarget "Mapsforge-Sample-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3ABAF731BA03CA3009E3763 /* Debug */,
-				D3ABAF741BA03CA3009E3763 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D3ABAF751BA03CA3009E3763 /* Build configuration list for PBXNativeTarget "Mapsforge-Sample-iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D3ABAF761BA03CA3009E3763 /* Debug */,
-				D3ABAF771BA03CA3009E3763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

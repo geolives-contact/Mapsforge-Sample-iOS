@@ -50,6 +50,7 @@
         _boundingBox = fileInfo->boundingBox_;
         _zoomBounds = -1;
         
+        // Set the tileSize depending on current device scale.
         int tileSize = 256;
         tileSize = tileSize * [UIScreen mainScreen].scale;
         self.tileSize = CGSizeMake(tileSize, tileSize);
@@ -64,28 +65,27 @@
         return;
     }
     
-    // This call is synchronous, so we need to run an async thread to handle the stuff.
-    //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        MFTileBitmap *tb = [self _getImageForX:path.x forY:path.y forZ:path.z forScale:path.contentScaleFactor];        // This is NOT an iOS classic Bitmap.
-        
-        // The MFTileBitmap is not an iOS classic Bitmap, so we need to convert it from the Java type to the iOS type.
-        // Consider we must return the result as a NSData, we get the byte array and use the IOSByteArray class to convert it into NSData.
-        
-        JavaIoByteArrayOutputStream* stream = [[JavaIoByteArrayOutputStream alloc] init];
-        
-        @try {
-            [tb compressWithJavaIoOutputStream:stream];
-            
-        } @catch (NSException* e) { NSLog(@"%@", e.description); }
-        
-        IOSByteArray* byteArray = [stream toByteArray];
-        NSData* data = [byteArray toNSData];
-        
-        // We get the image as a NSData variable. Send the result to the map view.
-        result(data, nil);
+    // We are NOT using an async task here because of mapsforge logic is not thread-safe if we use a single map file reference.
+    // Implementing a Map Worker Pool as for Mapsforge Android could speed up the display of tiles.
     
-    //});
+    // Asking Mapsforge to get the tile.
+    MFTileBitmap *tb = [self _getImageForX:path.x forY:path.y forZ:path.z forScale:path.contentScaleFactor];
+    
+    // The MFTileBitmap is not an iOS classic Bitmap like UIImage, so we need to convert it from the Java type to the iOS type.
+    // Consider we must return the result as a NSData, we get the byte array and use the IOSByteArray class to convert it into NSData.
+    
+    JavaIoByteArrayOutputStream* stream = [[JavaIoByteArrayOutputStream alloc] init];
+    
+    @try {
+        [tb compressWithJavaIoOutputStream:stream];
+        
+    } @catch (NSException* e) { NSLog(@"%@", e.description); }
+    
+    IOSByteArray* byteArray = [stream toByteArray];
+    NSData* data = [byteArray toNSData];
+    
+    // We get the image as a NSData variable. Send the result to the map view.
+    result(data, nil);
     
 }
 
@@ -121,7 +121,10 @@
 -(BOOL)_tileOutOfBoundsForX:(int)x forY:(int)y forZ:(int)z
 {
     if (z != _zoomBounds)
+    {
+        // We need to recompute the bounds for the new zoom.
         [self _recalculateTileBoundsWithZoom:z];
+    }
     
     BOOL oob =  (x < _westTileBounds) || (x > _eastTileBounds) || (y < _northTileBounds) || (y > _southTileBounds);
     return oob;
